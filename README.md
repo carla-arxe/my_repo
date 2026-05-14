@@ -12,13 +12,13 @@ The **.Renviron** file stores environment variables. It provides a secure locati
 
 2. Add the following lines (replacing with the actual credentials):
 
-*DB_HOST="your_server_host"
-DB_NAME="your_database_name"
-DB_USER="your_username"
-DB_PASS="your_password"
-DB_PORT=5432
-CDM_SCHEMA="your_cdm_schema"
-WRITE_SCHEMA="your_write_schema"*
+  DB_HOST="your_server_host"
+  DB_NAME="your_database_name"
+  DB_USER="your_username"
+  DB_PASS="your_password"
+  DB_PORT=5432
+  CDM_SCHEMA="your_cdm_schema"
+  WRITE_SCHEMA="your_write_schema"
 
 3. Restart R for the changes to take effect.
 
@@ -36,7 +36,7 @@ The **.Rprofile** file contains R code that executes automatically at the start 
 
 Once configured, open R and execute:
 
-*cdm <- connect_hmar()*
+  cdm <- connect_hmar()
 
 If you uncomment the last line in the *.Rprofile* script, the cdm object will be created instantly as soon as you open RStudio.
 
